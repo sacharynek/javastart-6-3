@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class TabLogic {
     static Scanner sc = new Scanner(System.in);
+
     public static int[] fillTab(int[] tab) {
 
         for (int i = 0; i < tab.length; i++) {
