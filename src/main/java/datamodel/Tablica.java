@@ -29,17 +29,11 @@ public class Tablica {
         this.tab = tab;
     }
 
-    public static int readElementFromCMD() {
-
+    public void fillTab() {
         Scanner sc = new Scanner(System.in);
-        System.out.println("podaj liczbę całkowita");
-        return sc.nextInt();
-
-    }
-
-    public void fillTab(){
-        for(int i = 0; i<this.tab.length;i++){
-            this.tab[i] = Tablica.readElementFromCMD();
+        for (int i = 0; i < this.tab.length; i++) {
+            System.out.println("podaj liczbę całkowita numer: " + (i + 1));
+            this.tab[i] = sc.nextInt();
         }
     }
 
