@@ -2,10 +2,10 @@ package datamodel;
 
 import java.util.Scanner;
 
-public class Tablica {
-
+public class TabLogic {
+    static Scanner sc = new Scanner(System.in);
     public static int[] fillTab(int[] tab) {
-        Scanner sc = new Scanner(System.in);
+
         for (int i = 0; i < tab.length; i++) {
             System.out.println("podaj liczbę całkowita numer: " + (i + 1));
             tab[i] = sc.nextInt();
