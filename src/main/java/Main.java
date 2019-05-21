@@ -3,11 +3,9 @@ import datamodel.Tablica;
 public class Main {
 
     public static void main(String[] args) {
-        Tablica tab = new Tablica(new int[5]);
-        tab.fillTab();
+        int[] tab;
+        tab = Tablica.fillTab(new int[5]);
         System.out.println(tab);
-        System.out.println(tab.sumOddElements());
-
+        System.out.println(Tablica.sumOddElements(tab));
     }
-
 }
